@@ -1,3 +1,8 @@
+# BuyCheck
+
+🌐 **Live Website:** https://buycheck.vercel.app
+
+🔗 **Backend:** https://buycheck-server.onrender.com
 # BuyCheck — AI Shopping Intelligence & Payment Protection Platform
 
 > **Shop smarter. Pay with confidence.**
