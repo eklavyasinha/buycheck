@@ -1,7 +1,6 @@
 # BuyCheck
 
-🌐 **Live Website:** https://buycheck.vercel.app
-
+🌐 **Live Website:** https://spry-piano-ofd2b3r.tmp.now/
 🔗 **Backend:** https://buycheck-server.onrender.com
 # BuyCheck — AI Shopping Intelligence & Payment Protection Platform
 
