@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-primary: #0D0E11;
+    --bg-secondary: #16181D;
+    --bg-card: #121419;
+    --text-primary: #F7F7F3;
+    --text-muted: #8E929E;
+    --border-color: rgba(255, 255, 255, 0.10);
+    --accent-lime: #D4FF00;
+  }
+
+  .light {
+    --bg-primary: #F7F7F3;
+    --bg-secondary: #EBEBE6;
+    --bg-card: #FFFFFF;
+    --text-primary: #0D0E11;
+    --text-muted: #5A5E6B;
+    --border-color: rgba(0, 0, 0, 0.10);
+    --accent-lime: #7BA100;
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0D0E11;
+}
+::-webkit-scrollbar-thumb {
+  background: #242832;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3B4252;
+}
+
+/* Glass & Card styles */
+.glass-panel {
+  background: rgba(18, 20, 25, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card {
+  background: rgba(22, 24, 29, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  border-color: rgba(212, 255, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.tactile-btn {
+  transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tactile-btn:active {
+  transform: scale(0.97);
+}
+
+.lime-glow {
+  box-shadow: 0 0 20px rgba(212, 255, 0, 0.25);
+}
+
+.lime-glow-subtle {
+  box-shadow: 0 0 12px rgba(212, 255, 0, 0.12);
+}
