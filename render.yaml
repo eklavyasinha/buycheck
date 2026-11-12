@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: buycheck-server
+    runtime: node
+    plan: free
+    rootDir: server
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: JWT_SECRET
+        generateValue: true
+      - key: CLIENT_URL
+        value: https://buycheck.vercel.app
+      - key: GEMINI_MODEL
+        value: gemini-3.8-flash
+      - key: PAYPAL_MODE
+        value: sandbox
